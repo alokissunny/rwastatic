@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ContactPageTemplate from '../../components/ContactPageTemplate'
+import ContactPageTemplate from '../../components/CreateRwaPageTemplate'
 
 const ContactPagePreview = ({ entry, getAsset }) => {
   return (

@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {graphql} from 'gatsby'
-import ContactPageTemplate from '../components/ContactPageTemplate'
+import CreateRwaPageTemplate from '../components/CreateRwaPageTemplate'
 import Layout from '../components/Layout'
 
 const ContactPage = ({data}) => {
   const {frontmatter} = data.markdownRemark
   return (
     <Layout>
-      <ContactPageTemplate
+      <CreateRwaPageTemplate
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
         meta_title={frontmatter.meta_title}
