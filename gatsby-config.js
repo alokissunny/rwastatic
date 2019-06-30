@@ -3,6 +3,10 @@ const config = require('./config')
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
 module.exports = {
+  proxy: {
+    prefix: "/api",
+    url: "http://localhost:5000",
+  },
   siteMetadata: {
     title: config.siteTitle,
     siteUrl: config.siteUrl,

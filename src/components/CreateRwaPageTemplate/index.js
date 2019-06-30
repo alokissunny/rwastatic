@@ -32,7 +32,8 @@ class CreateRwaPageTemplate extends Component {
     axios
     .post("/api/subdomain/create", data)
     .then(()=> {
-      navigate('/')
+      window.open('http://'+data.rwa+".vcap.me:3000");
+      // navigate(data.rwa+"vcap.me:3000")
     })
     .catch( 
       ()=> {
